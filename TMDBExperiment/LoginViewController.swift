@@ -34,7 +34,11 @@ class LoginViewController: UIViewController {
         */
         let params = ["api_key": "aadfd5df8a93f2adb470ffac7193bad9"]
         let url = urlFromParams(params as [String : AnyObject], pathExtentions: "/authentication/token/new")
-        let request = URLRequest(url: url)
+        var request = URLRequest(url: url)
+        request.httpMethod = "GET"
+        request.addValue("application/json", forHTTPHeaderField: "Accept")
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        
         let task = URLSession.shared.dataTask(with: request) {
             (data, response, error) in
             

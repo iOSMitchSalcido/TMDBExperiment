@@ -92,7 +92,10 @@ extension WebAuthViewController: UIWebViewDelegate {
             let params = ["api_key": apiKey,
                           "request_token": token]
             let url = urlFromParams(params as [String : AnyObject], pathExtentions: "/authentication/session/new")
-            let request = URLRequest(url: url)
+            var request = URLRequest(url: url)
+            request.httpMethod = "GET"
+            request.addValue("application/json", forHTTPHeaderField: "Accept")
+            request.addValue("application/json", forHTTPHeaderField: "Content-Type")
             let task = URLSession.shared.dataTask(with: request) {
                 (data, response, error) in
                 
