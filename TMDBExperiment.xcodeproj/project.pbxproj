@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		86C795A81EA3A503005C25BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C795A71EA3A503005C25BB /* AppDelegate.swift */; };
-		86C795AA1EA3A503005C25BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C795A91EA3A503005C25BB /* ViewController.swift */; };
+		86C795AA1EA3A503005C25BB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C795A91EA3A503005C25BB /* LoginViewController.swift */; };
 		86C795AD1EA3A503005C25BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86C795AB1EA3A503005C25BB /* Main.storyboard */; };
 		86C795AF1EA3A503005C25BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86C795AE1EA3A503005C25BB /* Assets.xcassets */; };
 		86C795B21EA3A503005C25BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86C795B01EA3A503005C25BB /* LaunchScreen.storyboard */; };
 		86C795BD1EA3A503005C25BB /* TMDBExperimentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C795BC1EA3A503005C25BB /* TMDBExperimentTests.swift */; };
 		86C795C81EA3A503005C25BB /* TMDBExperimentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C795C71EA3A503005C25BB /* TMDBExperimentUITests.swift */; };
+		86C795D61EA3A571005C25BB /* WebAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C795D51EA3A571005C25BB /* WebAuthViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,7 @@
 /* Begin PBXFileReference section */
 		86C795A41EA3A503005C25BB /* TMDBExperiment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TMDBExperiment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86C795A71EA3A503005C25BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		86C795A91EA3A503005C25BB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		86C795A91EA3A503005C25BB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		86C795AC1EA3A503005C25BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		86C795AE1EA3A503005C25BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		86C795B11EA3A503005C25BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,7 @@
 		86C795C31EA3A503005C25BB /* TMDBExperimentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TMDBExperimentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		86C795C71EA3A503005C25BB /* TMDBExperimentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBExperimentUITests.swift; sourceTree = "<group>"; };
 		86C795C91EA3A503005C25BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86C795D51EA3A571005C25BB /* WebAuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebAuthViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				86C795A71EA3A503005C25BB /* AppDelegate.swift */,
-				86C795A91EA3A503005C25BB /* ViewController.swift */,
+				86C795A91EA3A503005C25BB /* LoginViewController.swift */,
+				86C795D51EA3A571005C25BB /* WebAuthViewController.swift */,
 				86C795AB1EA3A503005C25BB /* Main.storyboard */,
 				86C795AE1EA3A503005C25BB /* Assets.xcassets */,
 				86C795B01EA3A503005C25BB /* LaunchScreen.storyboard */,
@@ -193,6 +196,7 @@
 				TargetAttributes = {
 					86C795A31EA3A503005C25BB = {
 						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = FN5VW63KQX;
 						ProvisioningStyle = Automatic;
 					};
 					86C795B71EA3A503005C25BB = {
@@ -259,8 +263,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86C795AA1EA3A503005C25BB /* ViewController.swift in Sources */,
+				86C795AA1EA3A503005C25BB /* LoginViewController.swift in Sources */,
 				86C795A81EA3A503005C25BB /* AppDelegate.swift in Sources */,
+				86C795D61EA3A571005C25BB /* WebAuthViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +417,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = FN5VW63KQX;
 				INFOPLIST_FILE = TMDBExperiment/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mitchsalcido.TMDBExperiment;
@@ -424,6 +430,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = FN5VW63KQX;
 				INFOPLIST_FILE = TMDBExperiment/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mitchsalcido.TMDBExperiment;
@@ -505,6 +512,7 @@
 				86C795CE1EA3A503005C25BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		86C795CF1EA3A503005C25BB /* Build configuration list for PBXNativeTarget "TMDBExperimentTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +521,7 @@
 				86C795D11EA3A503005C25BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		86C795D21EA3A503005C25BB /* Build configuration list for PBXNativeTarget "TMDBExperimentUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +530,7 @@
 				86C795D41EA3A503005C25BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
