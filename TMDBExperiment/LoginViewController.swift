@@ -174,8 +174,6 @@ extension LoginViewController {
                       "request_token": token]
         let url = urlFromParams(params as [String : AnyObject], pathExtentions: "/authentication/session/new")
         var request = URLRequest(url: url)
-        request.httpMethod = "GET"
-
         let task = URLSession.shared.dataTask(with: request) {
             (data, response, error) in
             
