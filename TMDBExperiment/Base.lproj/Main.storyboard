@@ -29,16 +29,30 @@
                                     <action selector="loginButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o3Y-Kb-QHK"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tgv-xJ-9Ge">
+                                <rect key="frame" x="71" y="407" width="225" height="48"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
+                                <state key="normal" title="Alt TMDB Login"/>
+                                <connections>
+                                    <action selector="loginButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W5H-Mb-6gd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="tgv-xJ-9Ge" firstAttribute="leading" secondItem="pRG-aq-Ir0" secondAttribute="trailing" constant="-204.5" id="PQc-Jq-TTS"/>
+                            <constraint firstItem="tgv-xJ-9Ge" firstAttribute="top" secondItem="pRG-aq-Ir0" secondAttribute="bottom" constant="49.5" id="WaY-gb-e7V"/>
                             <constraint firstItem="pRG-aq-Ir0" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="q9O-3Q-YpR"/>
                             <constraint firstItem="pRG-aq-Ir0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yrM-eR-yZ2"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="altLoginButton" destination="tgv-xJ-9Ge" id="SLu-Sp-RN9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
         <!--Web Auth View Controller-->
         <scene sceneID="A5c-HA-8zx">

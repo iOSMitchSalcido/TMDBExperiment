@@ -22,7 +22,7 @@ class WebAuthViewController: UIViewController {
     let scheme = "https"
     let host = "api.themoviedb.org"
     let path = "/3"
-    let apiKey = "aadfd5df8a93f2adb470ffac7193bad9"
+    let apiKey = "e1e8307ad4cd932629ea3e3504541260"
     
     // ref to webView
     @IBOutlet weak var webView: UIWebView!
